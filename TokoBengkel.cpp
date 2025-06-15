@@ -36,6 +36,7 @@ int main()
     {
         for (int i = 0; i < 7; i++)
         {
+            kodeKendaraan='A';
             cout << i + 1 << ". " << namaServis[i] <<" - "<< " (" << hargaServisMotor[i] << ")\n";
         }
     }
@@ -43,6 +44,7 @@ int main()
     {
         for (int i = 0; i < 5; i++)
         {
+            kodeKendaraan='B';
             cout << i + 1 << ". " << namaServis[i] <<" - "<< " (" << hargaServisMobil[i] << ")\n";
         }
     }
