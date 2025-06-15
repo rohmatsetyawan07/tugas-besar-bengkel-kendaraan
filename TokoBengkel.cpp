@@ -2,6 +2,11 @@
 #include <string>
 using namespace std;
 
+void salamPembuka()
+{
+    cout << "Selamat Datang di Bengkel Andalan Anda\n\n";
+}
+
 int main()
 {
     string namaPelanggan, platNomor, jenisKendaraan;
@@ -13,6 +18,8 @@ int main()
     int pilihan[10]; // max 10 layanan
 
     cout << "+_+_+_+_+_+_Bengkel Jaya Terpadu_+_+_+_+_+_+\n\n";
+
+    salamPembuka();
 
     cout << "Masukan Nama Anda: ";
     getline(cin, namaPelanggan);
@@ -27,18 +34,16 @@ int main()
 
     if (jenisKendaraan == "motor")
     {
-        kodeKendaraan = 'A';
-        for (int i = 0; i <=7; i++)
+        for (int i = 0; i < 7; i++)
         {
-            cout << i + 1 << ". " << namaServis[i] << " (" << hargaServisMotor[i] << ")\n";
+            cout << i + 1 << ". " << namaServis[i] <<" - "<< " (" << hargaServisMotor[i] << ")\n";
         }
     }
     else if (jenisKendaraan == "mobil")
     {
-        kodeKendaraan = 'B';
         for (int i = 0; i < 5; i++)
         {
-            cout << i + 1 << ". " << namaServis[i] << " (" << hargaServisMobil[i] << ")\n";
+            cout << i + 1 << ". " << namaServis[i] <<" - "<< " (" << hargaServisMobil[i] << ")\n";
         }
     }
     else
@@ -57,7 +62,7 @@ int main()
         cout << "Pilihan ke-" << i + 1 << ": ";
         cin >> pilihan[i];
 
-        if (pilihan[i] < 1 || pilihan[i] > 5)
+        if (pilihan[i] < 1 || pilihan[i] > 7)
         {
             cout << "Pilihan tidak valid!\n";
             return 0;
