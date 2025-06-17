@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <conio.h>
 using namespace std;
 
 void salamPembuka()
@@ -7,12 +8,32 @@ void salamPembuka()
     cout << "Selamat Datang di Bengkel Andalan Anda\n\n";
 }
 
+void pilihanAplikasi()
+{
+	int pilihan;
+    cout << "Apakah Anda Ingin Kembali ke Halaman Utama? \n\n";
+    cout << "Jika Iya Tekan Y "<<endl;
+    cout<<"Jika Tidak Tekan N"<<endl;
+    cout<<"Masukan Pilihan Anda: ";
+    cin>>pilihan;
+    
+    
+    if (pilihan=='y'){
+    	
+    	system ("cls");
+    	getch();
+	}
+	else{
+		cout<<"Terima Kasih, Permintaan Anda Sedang di Proses"<<endl;
+	}
+}
+
 int main()
 {
     string namaPelanggan, platNomor, jenisKendaraan;
     string namaServis[7] = {"Ganti oli", "Servis Ringan", "Servis Berat", "Ganti Kampas Rem", "Tune Up", "Ganti Lampu", "Cek Crank Case"};
     int hargaServisMotor[7] = {75000, 500000, 750000, 45000, 300000, 15000, 40000};
-    int hargaServisMobil[5] = {85000, 600000, 800000, 50000, 400000};
+    int hargaServisMobil[7] = {85000, 600000, 800000, 50000, 400000, 20000, 45000};
     char kodeKendaraan;
     int jumlahServis, totalHarga = 0;
     int pilihan[10]; // max 10 layanan
@@ -34,18 +55,18 @@ int main()
 
     if (jenisKendaraan == "motor")
     {
-        for (int i = 0; i < 7; i++)
+        kodeKendaraan = 'A';
+        for (int i = 0; i <7; i++)
         {
-            kodeKendaraan='A';
-            cout << i + 1 << ". " << namaServis[i] <<" - "<< " (" << hargaServisMotor[i] << ")\n";
+            cout << i + 1 << ". " << namaServis[i] << " (" << hargaServisMotor[i] << ")\n";
         }
     }
     else if (jenisKendaraan == "mobil")
     {
-        for (int i = 0; i < 5; i++)
+        kodeKendaraan = 'B';
+        for (int i = 0; i <7; i++)
         {
-            kodeKendaraan='B';
-            cout << i + 1 << ". " << namaServis[i] <<" - "<< " (" << hargaServisMobil[i] << ")\n";
+            cout << i + 1 << ". " << namaServis[i] << " (" << hargaServisMobil[i] << ")\n";
         }
     }
     else
@@ -91,5 +112,10 @@ int main()
         cout << "- " << namaServis[idx] << endl;
     }
 
-    cout << "Total Harga: Rp " << totalHarga << endl;
+    cout << "Total Harga: Rp " << totalHarga << endl<<endl;
+    
+    cout<<"===================================\n\n";
+    
+    pilihanAplikasi();
+    
 }
