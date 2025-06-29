@@ -19,7 +19,7 @@ void pilihanAplikasi()
     cin>>pilihan;
     cout<<"==========Tekan Enter untuk Konfirmasi==========";
     
-    if (pilihan=="yes" or "Yes"){
+    if (pilihan=="yes" || pilihan=="Yes" || pilihan=="YES"){
     	
     	getch();
     	system ("cls");
@@ -55,7 +55,7 @@ int main()
 
     cout << "\n+_+_+_+_+_+_Daftar Harga Servis_+_+_+_+_+_+\n\n";
 
-    if (jenisKendaraan == "motor" or "Motor")
+    if (jenisKendaraan == "motor" || jenisKendaraan=="Motor" || jenisKendaraan=="MOTOR")
     {
         kodeKendaraan = 'A';
         for (int i = 0; i <7; i++)
@@ -63,7 +63,7 @@ int main()
             cout << i + 1 << ". " << namaServis[i] << " (" << hargaServisMotor[i] << ")\n";
         }
     }
-    else if (jenisKendaraan == "mobil" or "Mobil")
+    else if (jenisKendaraan == "mobil" || jenisKendaraan=="Mobil" || jenisKendaraan=="MOBIL")
     {
         kodeKendaraan = 'B';
         for (int i = 0; i <7; i++)
