@@ -5,7 +5,7 @@ using namespace std;
 
 void salamPembuka()
 {
-    cout << "Selamat Datang di Bengkel Univ Muhammadiyah\n\n";
+    cout << "===========Selamat Datang di Bengkel Terbaik Pilihan Anda===========\n\n";
 }
 
 void pilihanAplikasi()
@@ -40,7 +40,7 @@ int main()
     int jumlahServis, totalHarga = 0;
     int pilihan[10]; // max 10 layanan
 
-    cout << "+_+_+_+_+_+_Bengkel Jaya Terpadu_+_+_+_+_+_+\n\n";
+    cout << "===========Bengkel Universitas Muhammadiyah===========\n\n";
 
     salamPembuka();
 
@@ -53,7 +53,7 @@ int main()
     cout << "Masukan Jenis Kendaraan Anda (motor / mobil): ";
     getline(cin, jenisKendaraan);
 
-    cout << "\n===========Daftar Harga Servis===========\n\n";
+    cout << "\n+_+_+_+_+_+_Daftar Harga Servis_+_+_+_+_+_+\n\n";
 
     if (jenisKendaraan == "motor")
     {
