@@ -5,21 +5,21 @@ using namespace std;
 
 void salamPembuka()
 {
-    cout << "===========Selamat Datang di Bengkel Terbaik Pilihan Anda===========\n\n";
+    cout << "=====Selamat Datang di Bengkel Terbaik Pilihan Anda=====\n\n";
 }
 
 void pilihanAplikasi()
 {
 	int main();
-	char pilihan;
+	string pilihan;
     cout << "Apakah Anda Ingin Kembali ke Halaman Utama? \n\n";
-    cout << "Jika Iya Tekan Y "<<endl;
-    cout<<"Jika Tidak Tekan N"<<endl;
+    cout << "Jika Iya Ketik Yes "<<endl;
+    cout<<"Jika Tidak Ketik No"<<endl;
     cout<<"Masukan Pilihan Anda: ";
     cin>>pilihan;
     cout<<"==========Tekan Enter untuk Konfirmasi==========";
     
-    if (pilihan=='y'){
+    if (pilihan=="yes" or "Yes"){
     	
     	getch();
     	system ("cls");
@@ -40,7 +40,7 @@ int main()
     int jumlahServis, totalHarga = 0;
     int pilihan[10]; // max 10 layanan
 
-    cout << "===========Bengkel Universitas Muhammadiyah===========\n\n";
+    cout << "=====Bengkel Universitas Muhammadiyah=====\n\n";
 
     salamPembuka();
 
@@ -55,7 +55,7 @@ int main()
 
     cout << "\n+_+_+_+_+_+_Daftar Harga Servis_+_+_+_+_+_+\n\n";
 
-    if (jenisKendaraan == "motor")
+    if (jenisKendaraan == "motor" or "Motor")
     {
         kodeKendaraan = 'A';
         for (int i = 0; i <7; i++)
@@ -63,7 +63,7 @@ int main()
             cout << i + 1 << ". " << namaServis[i] << " (" << hargaServisMotor[i] << ")\n";
         }
     }
-    else if (jenisKendaraan == "mobil")
+    else if (jenisKendaraan == "mobil" or "Mobil")
     {
         kodeKendaraan = 'B';
         for (int i = 0; i <7; i++)
