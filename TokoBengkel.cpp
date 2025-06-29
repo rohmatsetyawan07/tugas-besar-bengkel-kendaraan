@@ -5,7 +5,7 @@ using namespace std;
 
 void salamPembuka()
 {
-    cout << "Selamat Datang di Bengkel Andalan Anda\n\n";
+    cout << "Selamat Datang di Bengkel Univ Muhammadiyah\n\n";
 }
 
 void pilihanAplikasi()
@@ -53,7 +53,7 @@ int main()
     cout << "Masukan Jenis Kendaraan Anda (motor / mobil): ";
     getline(cin, jenisKendaraan);
 
-    cout << "\n+_+_+_+_+_+_Daftar Harga Servis_+_+_+_+_+_+\n\n";
+    cout << "\n===========Daftar Harga Servis===========\n\n";
 
     if (jenisKendaraan == "motor")
     {
