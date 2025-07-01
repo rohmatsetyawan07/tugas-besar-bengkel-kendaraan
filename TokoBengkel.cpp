@@ -15,7 +15,7 @@ void pilihanAplikasi()
     cout << "Apakah Anda Ingin Kembali ke Halaman Utama? \n\n";
     cout << "Jika Iya Ketik Yes "<<endl;
     cout<<"Jika Tidak Ketik No"<<endl;
-    cout<<"Masukan Pilihan Anda: ";
+    cout<<"Masukkan Pilihan Anda: ";
     cin>>pilihan;
     cout<<"==========Tekan Enter untuk Konfirmasi==========";
     
@@ -38,19 +38,19 @@ int main()
     int hargaServisMobil[7] = {85000, 600000, 800000, 50000, 400000, 20000, 45000};
     char kodeKendaraan;
     int jumlahServis, totalHarga = 0;
-    int pilihan[10]; // max 10 layanan
+    int pilihan[10];
 
     cout << "=====Bengkel Universitas Muhammadiyah=====\n\n";
 
     salamPembuka();
-
-    cout << "Masukan Nama Anda: ";
+    cin.ignore();
+    cout << "Masukkan Nama Anda: ";
     getline(cin, namaPelanggan);
 
-    cout << "Masukan Plat Nomor Kendaraan: ";
+    cout << "Masukkan Plat Nomor Kendaraan: ";
     getline(cin, platNomor);
 
-    cout << "Masukan Jenis Kendaraan Anda (motor / mobil): ";
+    cout << "Masukkan Jenis Kendaraan Anda (motor / mobil): ";
     getline(cin, jenisKendaraan);
 
     cout << "\n+_+_+_+_+_+_Daftar Harga Servis_+_+_+_+_+_+\n\n";
@@ -77,7 +77,7 @@ int main()
         return 0;
     }
 
-    cout << "\nMasukan jumlah layanan yang ingin dipilih: ";
+    cout << "\nMasukkan jumlah layanan yang ingin dipilih: ";
     cin >> jumlahServis;
 
     cout << "Pilih " << jumlahServis << " layanan (masukkan nomor sesuai menu 1-5):\n";
