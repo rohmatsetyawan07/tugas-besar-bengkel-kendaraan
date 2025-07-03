@@ -80,7 +80,7 @@ int main()
     cout << "\nMasukkan jumlah layanan yang ingin dipilih: ";
     cin >> jumlahServis;
 
-    cout << "Pilih " << jumlahServis << " layanan (masukkan nomor sesuai menu 1-5):\n";
+    cout << "Pilih " << jumlahServis << " layanan (masukkan nomor sesuai menu 1-7):\n";
 
     for (int i = 0; i < jumlahServis; i++)
     {
